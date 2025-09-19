@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollyGlot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PollyGlot</h1>
+        <div id="input-section">
+            <label for="text-to-translate">Text to translate:</label>
+            <input type="text" id="text-to-translate" placeholder="Type your text here">
+            <div id="language-selector">
+                <label><input type="radio" name="language" value="French"> French</label>
+                <label><input type="radio" name="language" value="Spanish"> Spanish</label>
+                <label><input type="radio" name="language" value="Japanese"> Japanese</label>
+            </div>
+            <button id="translate-btn">Translate</button>
+        </div>
+        <div id="results-section" style="display:none;">
+            <h2>Original text:</h2>
+            <p id="original-text"></p>
+            <h2>Your translation:</h2>
+            <p id="translated-text"></p>
+            <button id="start-over-btn">Start Over</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
